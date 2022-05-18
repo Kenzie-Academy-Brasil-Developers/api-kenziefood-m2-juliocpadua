@@ -343,6 +343,10 @@ aside {
   overflow-y: auto;
 }
 
+.cart__body.empty {
+  padding: 0;
+}
+
 .itemCart {
   display: flex;
   width: 82%;
@@ -460,6 +464,30 @@ aside {
   color: #fff;
 }
 
+.cart__empty {
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+  background: #f8f9fa;
+  color: #868e96;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.cart__empty--img {
+  width: 36px;
+  height: 40px;
+}
+
+.cart__empty--text {
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-align: center;
+}
 @media (min-width: 680px) {
   body {
     background-color: var(--bg-body);
