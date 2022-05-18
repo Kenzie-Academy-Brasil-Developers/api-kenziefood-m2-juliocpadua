@@ -2,7 +2,7 @@ import { ShowHandler } from "../handlers/ShowHandler.js";
 import { AuthHandler } from "../handlers/AuthHandler.js";
 import { CartService } from "../services/CartService.js";
 
-const verify = true; //await AuthHandler.userVerify();
+const verify = await AuthHandler.userVerify();
 
 ShowHandler.headerMain(verify);
 export const products = await ShowHandler.getProducts(verify);
